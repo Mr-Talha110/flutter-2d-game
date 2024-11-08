@@ -35,6 +35,13 @@ class _GameAppState extends State<GameApp> {
         scaffoldBackgroundColor: Colors.green,
       ),
       home: Scaffold(
+        appBar: AppBar(
+          backgroundColor: Colors.transparent,
+          title: const Text(
+            'Clean World!',
+            style: TextStyle(color: Colors.white, fontWeight: FontWeight.w800),
+          ),
+        ),
         body: SafeArea(
           child: Center(
             child: FittedBox(

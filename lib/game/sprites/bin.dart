@@ -20,7 +20,6 @@ class Bin extends SpriteComponent
   void onCollisionStart(
       Set<Vector2> intersectionPoints, PositionComponent other) {
     if (other is Player && other.position.y > position.y) {
-      print('get here');
       other.removeFromParent();
     }
     super.onCollisionStart(intersectionPoints, other);
